@@ -1,0 +1,9 @@
+<%= form_for :session, url: login_path do |f| %>
+	<div>
+		<p>Username</p>
+		<p><%= f.text_field :username %></p>
+		<p>Password</p>
+		<p><%= f.password_field :password_hash %></p>
+		<p><%= f.submit "Login" %></p>
+	</div>
+<% end %>
